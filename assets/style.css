@@ -1,0 +1,194 @@
+/* global style  */
+Body {
+    Font-Family: "Open Sans", Sans-Serif;
+    Margin: 0;
+}
+
+a {
+    Text-Decoration: None;
+    Color: #000;
+}
+
+/* skeleton (header) style  */
+header {
+    background-color: #E09132;
+    Border-Bottom: 1px Solid #Ccc;
+    Padding: 0.5em 1em;
+    Display: Flex;
+    Justify-Content: Space-Between;
+}
+
+header h1 {
+    Font-Size: 1.5em;
+    Margin: 0.6em 0;
+    Display: Inline-Block;
+}
+
+.navigation Ul,
+.navigation Li {
+    Margin: 0;
+    Padding: 0;
+}
+
+.navigation Li {
+    Display: Inline-Block;
+    Margin: 1.4em 1em 1em 1em;
+}
+
+header a:hover {
+    Color: #712e05;
+}
+
+
+/* home page(main section) style */
+.main {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main div {
+    margin: 50px;
+    margin-right: 70px;
+}
+
+.main h1 {
+    margin-left: 20px;
+}
+
+.main p {
+    margin-left: 20px;
+}
+
+.main button {
+    background: #E09132;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 70px;
+    padding: 0.5px 0.5px;
+    font-size: auto;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 7px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.main button:hover {
+    background: #f6be7a;
+}
+
+/* books page style  */
+
+.books {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.books h1 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.books div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   gap: 100px;
+}
+
+.books button {
+    background: #E09132;
+    border: none;
+    outline: none;
+    width: 80px;
+    height: 35px;
+    text-transform: uppercase;
+    border-radius: 7px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.books button:hover {
+    background: #f6be7a;
+}
+
+.books select {
+    text-align: center;
+}
+
+/* books info style  */
+.info {
+    text-align: left;
+    margin-top: 40px;
+}
+
+.info div {
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 70%;
+    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.info div button {
+    background: #E09132;
+    border: none;
+    outline: none;
+    width: 80px;
+    height: 35px;
+    border-radius: 7px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.info div button:hover {
+    background: #f6be7a;
+    cursor: pointer;
+}
+
+#name {
+    font-size: 20px;
+}
+
+#author {
+    font-size: 15px;
+}
+
+#status{
+    font-style: italic;
+}
+
+/* error page style  */
+.error {
+    text-align: center;
+}
+
+.error h1 {
+    font-size: 30px;
+}
+
+.error a {
+    background: #E09132;
+    border: none;
+    outline: none;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 7px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.error a:hover {
+    background: #f6be7a;
+    cursor: pointer;
+}

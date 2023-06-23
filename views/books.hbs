@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="books">
+        <h1>BOOKS</h1>
+        <div>
+            <form action="/books" method="post">
+                <label for="search">Search : </label>
+                <input type="text" id="search" name="search" placeholder="Search for a book">
+
+                <button>
+                    <a href="">Search</a>
+                </button>
+            </form>
+            <form action="/books" method="post">
+                <label name="filter">Filter Result : </label>
+                <select class="example" name="filter" id="filter">
+                    <option value="Show All Books">Show All Books</option>
+                    <option value="Show Available Books">Show Available Books</option>
+                    <option value="Show My Books">Show My Books</option>
+                </select>
+
+                <button>
+                    <a href="">Filter</a>
+                </button>
+            </form>
+        </div>
+    </section>
+    <section class="info">
+        {{#each bookList}}
+        <div>
+            <p id="name">{{ this.name}}</p>
+            <p id="author">{{ this.author}}</p>
+
+            {{#if check }}
+            <form action="/books" method="post">
+                <input type="checkbox" name="borrow" value="{{this.name}}">
+                <button id="status" class="status">{{ this.status}}</button>
+            </form>
+            {{else}}
+            <p id="status" style="color: blue;">{{ this.status}}</p>
+            {{/if}}
+        </div>  
+        {{/each}}
+</body>
+
+</html>
